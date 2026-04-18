@@ -623,7 +623,7 @@ const Home = () => {
       from: 'Chennai',
       to: 'Kodaikanal',
       icon: <FaMountain />,
-      image: 'https://i.pinimg.com/736x/88/70/b3/8870b3ccb1791acc57c6a5771dc9fab8.jpg',
+      image: '/images/routess/kodaikanal1.jpg',
       description: 'Princess of Hill Stations - Scenic beauty & pleasant climate',
       distance: '520 km',
       cars: [
@@ -637,7 +637,7 @@ const Home = () => {
       from: 'Chennai',
       to: 'Coutralam',
       icon: <FaWater />,
-      image: 'https://i.pinimg.com/736x/39/4d/db/394ddb010d843e99f28b76b01ad7e88a.jpg',
+      image: '/images/routess/kuththalam.jpg',
       description: 'Famous waterfalls & natural spa - The Spa of South India',
       distance: '650 km',
       cars: [
@@ -651,7 +651,7 @@ const Home = () => {
       from: 'Chennai',
       to: 'Kanniyakumari',
       icon: <FaSun />,
-      image: 'https://i.pinimg.com/736x/6e/ad/4c/6ead4caddfb2d3c18ae1bc89ce303e95.jpg',
+       image: '/images/routess/kaniyakumari.jpg',
       description: 'Southernmost tip of India - Sunrise & sunset view',
       distance: '720 km',
       cars: [
@@ -665,7 +665,7 @@ const Home = () => {
       from: 'Tenkasi',
       to: 'Chennai',
       icon: <FaRoad />,
-      image: 'https://i.pinimg.com/1200x/7a/76/1d/7a761d0c69df3858fceff11ef8708f48.jpg',
+       image: '/images/routess/tenkasi.jpg',
       description: 'Temple town to Metropolitan city - Comfortable journey',
       distance: '580 km',
       cars: [
@@ -1592,7 +1592,7 @@ const Home = () => {
                             }}
                           >
                             <img 
-                              src="https://i.pinimg.com/1200x/65/c3/63/65c3636ca6b81584e53084c105c7a54d.jpg"
+                              src="/images/sedan/hyundai-aura-1.jpg"
                               alt="SEDAN"
                               style={{
                                 width: '100%',
@@ -1654,7 +1654,7 @@ const Home = () => {
                             }}
                           >
                             <img 
-                              src="https://i.pinimg.com/736x/b9/2a/2e/b92a2e7f7a93315f337daffcbb0f76d1.jpg"
+                              src="/images/sedan2/ciaz-1.jpg"
                               alt="ETIOS"
                               style={{
                                 width: '100%',
@@ -1716,7 +1716,7 @@ const Home = () => {
                             }}
                           >
                             <img 
-                              src="https://i.pinimg.com/736x/41/22/c1/4122c1500586bffc01010a1b1611e3a1.jpg"
+                              src="/images/suv/marazzo-1.jpg"
                               alt="MUV"
                               style={{
                                 width: '100%',
@@ -1778,7 +1778,7 @@ const Home = () => {
                             }}
                           >
                             <img 
-                              src="https://i.pinimg.com/1200x/fe/e6/ee/fee6eea7b191112a744e2bf23a277871.jpg"
+                              src="/images/innova/innova-1.jpg"
                               alt="INNOVA"
                               style={{
                                 width: '100%',
@@ -2146,7 +2146,7 @@ const Home = () => {
           <Row className="align-items-center">
             <Col lg={6} className="mb-4 mb-lg-0">
               <img 
-                src="https://i.pinimg.com/1200x/65/c3/63/65c3636ca6b81584e53084c105c7a54d.jpg"
+                src="/images/innova/innova-1.jpg"
                 alt="Our Fleet"
                 className="img-fluid rounded-3 shadow"
                 loading="lazy"

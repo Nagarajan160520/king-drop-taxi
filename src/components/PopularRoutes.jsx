@@ -8,8 +8,9 @@ const PopularRoutes = () => {
       from: 'Chennai',
       to: 'Kodaikanal',
       icon: <FaMountain />,
-      image: 'https://i.pinimg.com/736x/88/70/b3/8870b3ccb1791acc57c6a5771dc9fab8.jpg',
+      image: '/images/routess/kodaikanal1.jpg',
       description: 'Princess of Hill Stations - Scenic beauty & pleasant climate',
+      distance: '520 km',
       cars: [
         { type: 'SEDAN', oneWay: 14, roundTrip: 13 },
         { type: 'ETIOS', oneWay: 15, roundTrip: 14 },
@@ -21,8 +22,9 @@ const PopularRoutes = () => {
       from: 'Chennai',
       to: 'Coutralam',
       icon: <FaWater />,
-      image: 'https://i.pinimg.com/736x/39/4d/db/394ddb010d843e99f28b76b01ad7e88a.jpg',
+      image: '/images/routess/kuththalam.jpg',
       description: 'Famous waterfalls & natural spa - The Spa of South India',
+      distance: '650 km',
       cars: [
         { type: 'SEDAN', oneWay: 14, roundTrip: 13 },
         { type: 'ETIOS', oneWay: 15, roundTrip: 14 },
@@ -34,8 +36,9 @@ const PopularRoutes = () => {
       from: 'Chennai',
       to: 'Kanniyakumari',
       icon: <FaSun />,
-      image: 'https://i.pinimg.com/736x/6e/ad/4c/6ead4caddfb2d3c18ae1bc89ce303e95.jpg',
+      image: '/images/routess/kaniyakumari.jpg',
       description: 'Southernmost tip of India - Sunrise & sunset view',
+      distance: '720 km',
       cars: [
         { type: 'SEDAN', oneWay: 14, roundTrip: 13 },
         { type: 'ETIOS', oneWay: 15, roundTrip: 14 },
@@ -47,8 +50,9 @@ const PopularRoutes = () => {
       from: 'Tenkasi',
       to: 'Chennai',
       icon: <FaRoad />,
-      image: 'https://i.pinimg.com/1200x/7a/76/1d/7a761d0c69df3858fceff11ef8708f48.jpg',
+      image: '/images/routess/tenkasi.jpg',
       description: 'Temple town to Metropolitan city - Comfortable journey',
+      distance: '580 km',
       cars: [
         { type: 'SEDAN', oneWay: 14, roundTrip: 13 },
         { type: 'ETIOS', oneWay: 15, roundTrip: 14 },
@@ -60,8 +64,9 @@ const PopularRoutes = () => {
       from: 'Chennai',
       to: 'Karnataka',
       icon: <FaTree />,
-      image: 'https://i.pinimg.com/736x/fb/62/06/fb62061fdbe9104bb309b580f12542f5.jpg',
+      image: '/images/routess/karnataka.jpg',
       description: 'Explore the beauty of Karnataka - Mysore, Coorg & more',
+      distance: '680 km',
       cars: [
         { type: 'SEDAN', oneWay: 14, roundTrip: 13 },
         { type: 'ETIOS', oneWay: 15, roundTrip: 14 },
@@ -73,8 +78,9 @@ const PopularRoutes = () => {
       from: 'Chennai',
       to: 'Ooty',
       icon: <FaCloudSun />,
-      image: 'https://i.pinimg.com/1200x/c1/91/b0/c191b01fe2db4038835c96af3f4cc988.jpg',
+      image: '/images/routess/ooty.jpg',
       description: 'Queen of Hill Stations - Tea gardens & misty mountains',
+      distance: '570 km',
       cars: [
         { type: 'SEDAN', oneWay: 14, roundTrip: 13 },
         { type: 'ETIOS', oneWay: 15, roundTrip: 14 },
@@ -88,7 +94,7 @@ const PopularRoutes = () => {
     <div className="fade-in py-5">
       <Container>
         <h1 className="text-center mb-5" style={{ fontSize: 'clamp(1.8rem, 4vw, 2.5rem)' }}>
-          <span className="text-danger">Popular</span> Routes
+          <span className="text-warning">Popular</span> Routes
         </h1>
 
         <Row>
@@ -125,7 +131,7 @@ const PopularRoutes = () => {
                 <Card.Body className="p-4">
                   {/* Route Header with Icon */}
                   <div className="d-flex align-items-center mb-4">
-                    <div className="bg-danger text-dark rounded-circle p-3 me-3" style={{ width: '60px', height: '60px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <div className="bg-warning text-dark rounded-circle p-3 me-3" style={{ width: '60px', height: '60px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                       <span className="fs-3">{route.icon}</span>
                     </div>
                     <div>
@@ -133,14 +139,14 @@ const PopularRoutes = () => {
                         {route.from} → {route.to}
                       </h5>
                       <p className="text-secondary mb-0 small">
-                        Distance: Approx {index === 0 ? '520' : index === 1 ? '650' : index === 2 ? '720' : index === 3 ? '580' : index === 4 ? '680' : '570'} km
+                        Distance: {route.distance}
                       </p>
                     </div>
                   </div>
 
                   {/* Tariff Table - Exactly like screenshot */}
                   <Table striped bordered hover responsive className="mb-4">
-                    <thead className="bg-danger">
+                    <thead className="bg-warning">
                       <tr>
                         <th className="fw-bold">VEHICLE TYPE</th>
                         <th className="fw-bold">ONE WAY TRIP</th>
@@ -152,11 +158,11 @@ const PopularRoutes = () => {
                         <tr key={idx}>
                           <td className="fw-bold">{car.type}</td>
                           <td>
-                            <FaRupeeSign className="me-1 text-danger" />
+                            <FaRupeeSign className="me-1 text-warning" />
                             {car.oneWay} / km
                           </td>
                           <td>
-                            <FaRupeeSign className="me-1 text-danger" />
+                            <FaRupeeSign className="me-1 text-warning" />
                             {car.roundTrip} / km
                           </td>
                         </tr>
@@ -171,11 +177,11 @@ const PopularRoutes = () => {
                       <Col xs={6}>
                         <ul className="list-unstyled">
                           <li className="mb-2 d-flex align-items-center">
-                            <span className="text-danger me-2 fw-bold">•</span>
+                            <span className="text-warning me-2 fw-bold">•</span>
                             <span>DRIVER BATA <strong>₹400</strong></span>
                           </li>
                           <li className="mb-2 d-flex align-items-center">
-                            <span className="text-danger me-2 fw-bold">•</span>
+                            <span className="text-warning me-2 fw-bold">•</span>
                             <span>HILLSTATION CHARGES <strong>₹300</strong></span>
                           </li>
                         </ul>
@@ -183,11 +189,11 @@ const PopularRoutes = () => {
                       <Col xs={6}>
                         <ul className="list-unstyled">
                           <li className="mb-2 d-flex align-items-center">
-                            <span className="text-danger me-2 fw-bold">•</span>
+                            <span className="text-warning me-2 fw-bold">•</span>
                             <span>OTHER STATE PERMIT</span>
                           </li>
                           <li className="mb-2 d-flex align-items-center">
-                            <span className="text-danger me-2 fw-bold">•</span>
+                            <span className="text-warning me-2 fw-bold">•</span>
                             <span>TOLL & PARKING</span>
                           </li>
                         </ul>
@@ -198,7 +204,7 @@ const PopularRoutes = () => {
                   {/* Book Now Button */}
                   <div className="mt-4">
                     <a href="/" className="text-decoration-none">
-                      <button className="btn btn-danger w-100 fw-bold py-2" style={{ borderRadius: '10px' }}>
+                      <button className="btn btn-warning w-100 fw-bold py-2" style={{ borderRadius: '10px' }}>
                         Book This Route
                       </button>
                     </a>
@@ -217,15 +223,15 @@ const PopularRoutes = () => {
               <Col md={6}>
                 <ul className="list-unstyled">
                   <li className="mb-3 d-flex">
-                    <span className="text-danger me-2 fw-bold">•</span>
+                    <span className="text-warning me-2 fw-bold">•</span>
                     <span>All rates are per kilometer and include driver charges</span>
                   </li>
                   <li className="mb-3 d-flex">
-                    <span className="text-danger me-2 fw-bold">•</span>
+                    <span className="text-warning me-2 fw-bold">•</span>
                     <span>Minimum 130 KM applicable for one-way trips</span>
                   </li>
                   <li className="mb-3 d-flex">
-                    <span className="text-danger me-2 fw-bold">•</span>
+                    <span className="text-warning me-2 fw-bold">•</span>
                     <span>Round trip minimum 250 KM per day</span>
                   </li>
                 </ul>
@@ -233,15 +239,15 @@ const PopularRoutes = () => {
               <Col md={6}>
                 <ul className="list-unstyled">
                   <li className="mb-3 d-flex">
-                    <span className="text-danger me-2 fw-bold">•</span>
+                    <span className="text-warning me-2 fw-bold">•</span>
                     <span>Driver bata: Sedan ₹400, SUV/INNOVA ₹500 per day</span>
                   </li>
                   <li className="mb-3 d-flex">
-                    <span className="text-danger me-2 fw-bold">•</span>
+                    <span className="text-warning me-2 fw-bold">•</span>
                     <span>Toll, parking, and state permit charges extra</span>
                   </li>
                   <li className="mb-3 d-flex">
-                    <span className="text-danger me-2 fw-bold">•</span>
+                    <span className="text-warning me-2 fw-bold">•</span>
                     <span>24/7 customer support for all routes</span>
                   </li>
                 </ul>
@@ -260,7 +266,7 @@ const PopularRoutes = () => {
           transform: scale(1.1);
         }
         .table thead th {
-          background-color: #ff7979 !important;
+          background-color: #ffc107 !important;
           color: #000;
           font-weight: 600;
           border: none;
