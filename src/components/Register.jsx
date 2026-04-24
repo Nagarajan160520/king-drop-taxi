@@ -82,7 +82,7 @@ const Register = () => {
                     <FaCar size={30} />
                   </div>
                   <h2 className="text-dark">Create Account</h2>
-                  <p className="text-secondary">Join Leo Drop Taxi today</p>
+                  <p className="text-secondary">Join King Drop Taxi today</p>
                 </div>
 
                 {error && (
